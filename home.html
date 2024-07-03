@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    
+    
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Para: Cássia Ferreira Lourenço">
+    <meta property="og:site_name" content="Pequena Rosa">
+    
+    <link rel="stylesheet" href="./style/output.css">
+    <title>Simplesmente Acontece</title>
+</head>
+<body>
+    <!-- HEADER-->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center" >
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="img/Logo Rosa.png" alt="Logo Churrasquinho" class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" >
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Simplesmente Acontece</h1>
+
+        <span class="text-white font-medium"> Rua Pra Sempre, Centro do Universo - ❤️</span>
+
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+            <span class="text-white font-medium">Meu coração está aberto pra você! - 24hrs</span>
+        </div>
+        </div>
+        
+        
+    </header>
+    <!-- FIM HEADER-->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Relembre nossos Momentos</h2>
+    <br>
+    <!--Inicio Menu-->
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+           
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="img/h1.png" alt="Primeiro Encontro" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Taguatinga Shopping</p>
+                    <p class="text-sm">Um primeiro encontro é um momento cheio de expectativas, onde duas pessoas se conhecem melhor e buscam criar uma boa impressão. Escolhem cuidadosamente o local, a conversa e o comportamento para garantir uma experiência positiva. Mesmo com nervosismo, esta saída entre nos dois me fez ver uma conexão maravilhosa.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Passeio</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Passeio" data-price="10.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="img/h2.png" alt="Juramento do Dedinho" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Juramento do Dedinho</p>
+                    <p class="text-sm">O juramento do dedinho é uma promessa selada de forma simbólica e especial. Ao seu lado assistindo Wonka, fez desse o nosso juramento mais sincero e verdadeiro. Esse gesto simples, mas significativo, reforça a confiança e o vínculo entre nos dois, simbolizando que a palavra dada será mantida a qualquer custo.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Promessa</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Promessa" data-price="35.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="img/h3.png" alt="História de Amor" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">História de Amor</p>
+                    <p class="text-sm">O início da nossa história de amor foi momento mágico e cheio de promessas. Quando nossos corações começaram a se conectar, descobriram afinidades, e compartilharamos sonhos e aventuras juntos. Esse período foi marcado entre nossos olhares intensos, sorrisos tímidos e a alegria de estar na presença um do outro. Cada encontro é especial e cada conversa revela mais o que começa a se tornar indispensável.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Sorriso</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Sorriso" data-price="7.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="img/h4.png" alt="Uma Promessa de Amor Eterno" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Uma Promessa de Amor Eterno</p>
+                    <p class="text-sm">Sob o céu estrelado, nossos corações batem em uníssono, cada pulsar contando uma história de amor que se desdobra a cada olhar e toque. Seus olhos, brilhando como constelações, refletem a profundidade dos sentimentos que compartilhamos, enquanto nossas mãos entrelaçadas simbolizam a união de nossas almas. Cada palavra sussurrada no silêncio da noite carrega a promessa de um futuro repleto de momentos inesquecíveis. A tranquilidade da sua presença é meu refúgio, e juntos, criamos um mundo onde o amor floresce e se torna eterno.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Carinho</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Carinho" data-price="9.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="img/h5.png" alt="A Dança Silenciosa do Amor" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">JK Shopping</p>
+                    <p class="text-sm">No abraço caloroso da noite, nossos corpos se encontram em uma dança silenciosa de cumplicidade e afeto. O som suave de nossas respirações misturadas cria uma melodia íntima, e a sensação de estar em seus braços é o meu refúgio mais seguro. Seus lábios, quando encontram os meus, transmitem uma ternura que palavras não podem descrever, fazendo o tempo parar e o mundo desaparecer. Nesse momento, sinto que nossos corações estão conectados por um laço invisível, pulsando com a promessa de um amor que transcende qualquer barreira. Cada instante ao seu lado é uma poesia viva, e juntos, escrevemos a mais bela história de amor.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Companhia</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Companhia" data-price="17.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <div class="flex gap-2">
+                <img src="img/h6.png" alt="O Refúgio do Nosso Amor Eterno" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Torre de TV</p>
+                    <p class="text-sm">Em um crepúsculo dourado, nossos olhares se encontram e, por um instante, o mundo ao redor desaparece. O toque suave de suas mãos nas minhas é como a brisa leve que acaricia a alma, trazendo consigo a promessa de eternidade. Seus olhos, profundos e serenos, revelam um universo onde nossos sonhos se entrelaçam e se tornam um só. Cada palavra sussurrada é uma declaração silenciosa de amor, e cada sorriso compartilhado é um testemunho da felicidade que encontramos um no outro. Juntos, criamos um refúgio onde o tempo é nosso aliado, e o amor, nossa mais bela canção.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Registro</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Registro" data-price="17.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--fim do Produto-->
+
+            <div class="flex gap-2">
+                <img src="img/h7.png" alt="À Luz do seu Sorriso" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">À Luz do seu Sorriso</p>
+                    <p class="text-sm">Na luz das estrelas cintilantes, cada momento ao seu lado se torna uma jornada encantadora de descoberta e ternura. Seu sorriso ilumina meu caminho como um farol na escuridão, e sua voz, suave como uma brisa de verão, acalma meu coração inquieto. Em seus olhos, encontro a paz que tanto busquei, e em seus abraços, o conforto de um lar seguro. Cada gesto seu é uma promessa de amor que ecoa além do tempo e das palavras, criando uma história onde somos os protagonistas de um romance eterno.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Respeito</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Respeito" data-price="50.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--fim do Produto-->
+
+            <div class="flex gap-2">
+                <img src="img/h8.png" alt="Obra de Arte" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Obra de Arte</p>
+                    <p class="text-sm">Ela é como uma obra de arte em constante evolução, uma tela onde as cores e formas se mesclam para contar sua história única. Cada linha do seu rosto carrega traços das experiências vividas, enquanto seus olhos revelam profundidades desconhecidas. Suas mãos, habilidosas e delicadas, são capazes de criar e transformar, deixando uma marca pessoal em cada obra que realiza. Como uma verdadeira obra de arte, ela é uma manifestação viva de sua própria jornada, uma constante fonte de beleza e inspiração para aqueles que a contemplam.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Felicidade</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Felicidade" data-price="10.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--fim do Produto-->
+
+            <div class="flex gap-2">
+                <img src="img/h9.png" alt="Amizade" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Juntos até o fim</p>
+                    <p class="text-sm">Nossa amizade como casal é um elo precioso que vai além do romance. Somos companheiros inseparáveis, onde o riso preenche nosso dia e as conversas profundas fortalecem nossa compreensão mútua. Estamos sempre ao lado um do outro, como confidentes e apoiadores incondicionais, celebrando juntos as vitórias e enfrentando unidos os desafios. A amizade enriquece nosso relacionamento, criando uma conexão genuína baseada em respeito, confiança e admiração mútua. Ser não apenas amantes, mas também os melhores amigos um do outro, é o que torna nossa união tão especial e duradoura.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Amizade</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Amizade" data-price="10.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--fim do Produto-->
+
+            <div class="flex gap-2">
+                <img src="img/h10.png" alt="Passeio no Shopping" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Passeio no Shopping</p>
+                    <p class="text-sm">Em uma tarde ensolarada, perdemos-nos nas ruas movimentadas do shopping, onde cada passo juntos se transforma em um doce passeio pela variedade de lojas e pelas delícias gastronômicas. Seus olhos brilham com a curiosidade enquanto exploramos vitrines, cada sorriso trocado se tornando um cúmplice segredo entre nós. Entre risos e trocas de olhares, descobrimos pequenos momentos de intimidade em meio ao burburinho, e cada escolha compartilhada se torna um lembrete do quanto somos conectados. Percebemos que não é apenas sobre as compras, mas sim sobre os momentos preciosos que passamos juntos, transformando um simples passeio em uma memória romântica e inesquecível.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Diversão</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Diversão" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--fim do Produto-->
+
+            <div class="flex gap-2">
+                <img src="img/h11.png" alt="Parque da Cidade" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Parque da Cidade</p>
+                    <p class="text-sm">Num parque sereno, o dia se desenrola em cores suaves e brisas gentis que acariciam nossos rostos. Encontramos um local tranquilo para estender nossa manta, cercados pelo perfume das flores e pelo cantarolar dos pássaros. Compartilhamos um piquenique preparado com carinho, cada mordida acompanhada de risos e conversas que fluem naturalmente. Seus olhos encontram os meus com ternura, e sinto o calor reconfortante de suas mãos nas minhas. Entre sorrisos compartilhados e momentos de silêncio confortável, somos envolvidos pela magia simples de estarmos juntos, criando memórias que serão guardadas com carinho em nosso coração.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Piquenique</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Piquenique" data-price="10.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h12.png" alt="Queijo Coalho" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Sorveteria</p>
+                    <p class="text-sm">Numa sorveteria aconchegante, o aroma tentador de baunilha e chocolate nos envolve enquanto decidimos entre os sabores vibrantes que nos esperam. Cada colherada é uma dança de doçura em nossas línguas, acompanhada por risadas e histórias que fluem naturalmente entre nós. Entre trocas de olhares cúmplices e sorrisos brilhantes, compartilhamos momentos de pura indulgência e intimidade, transformando um simples passeio em uma experiência memorável e deliciosamente romântica.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Empatia</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Empatia" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h13.png" alt="Festa de Aniversário" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Festa de Aniversário</p>
+                    <p class="text-sm">Sob o manto escuro da noite estrelada, os segredos do universo se revelam em pequenos lampejos de luz que atravessam o céu infinito. O silêncio envolve tudo com uma calma profunda, enquanto a lua, serena e majestosa, banha a paisagem em seu brilho prateado. As sombras se alongam, criando esconderijos para amantes que sussurram juras de amor ao vento noturno. O perfume das flores noturnas se mistura ao frescor do ar, criando uma atmosfera de mistério e romance, onde o tempo parece suspenso, permitindo que corações se encontrem e se entreguem ao encanto da noite.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Dedicação</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Dedicação data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h17.png" alt="Passeio de Barco" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Passeio de Barco</p>
+                    <p class="text-sm">À luz suave do entardecer, o barco desliza suavemente sobre as águas tranquilas do lago, refletindo os tons dourados e rosados que pintam o céu ao redor. O murmúrio suave das ondas embala a nos, que se aconchega próximo um do outro, compartilhando o calor de nossos corpos e o calor de um amor que cresce a cada momento. À medida que avançamos, os reflexos da luz do sol começam a pontilhar a superfície serena da água, como promessas cintilantes de um futuro juntos. Sob o céu ensolarado, nos se sentimos infinitamente pequenos e ao mesmo tempo imensamente conectados, navegando juntos não apenas pelo lago, mas pela jornada da vida que agora parecia tão cheia de possibilidades e ternura.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">União</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="União" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h14.png" alt="Timidez" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Timidez</p>
+                    <p class="text-sm">Em meio à multidão, seus olhos se encontraram, e sua timidez tomou conta como um suave véu. Com as bochechas coradas e o coração disparado, vc abaixou o olhar, temendo que eu pudesse ouvir cada batida acelerada. Seu sorriso era tímido, mas carregava uma doçura que eu encontrei irresistível. Cada palavra que você tentava dizer parecia se esconder atrás de um sussurro, e seus gestos delicados revelavam uma vulnerabilidade encantadora. Quando eu gentilmente segurei sua mão, você sentiu um calor reconfortante, e suas inseguranças começaram a se dissipar. Naquele toque, ambos entenderam que a timidez era uma bela expressão de um amor nascente, delicado e verdadeiro.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Cumplicidade</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Cumplicidade" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h15.png" alt="Juntos olhando o mesmo Céu" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Juntos olhando o mesmo Céu</p>
+                    <p class="text-sm">Enquanto a noite avançava, nos se aconchegamos sob os lençóis macios, nossos corpos se moldando um ao outro em uma dança silenciosa de carinho. O ritmo suave de nossas respirações sincronizava-se, criando uma melodia tranquila que preenchia o quarto escuro. Seus dedos entrelaçados, mesmo na penumbra, eram um lembrete constante do laço inquebrável que os unia. À medida que nossos olhos pesavam e o sono os envolvia, um sentimento profundo de paz e segurança nos envolvia. Ali, no conforto do abraço um do outro, encontravam um refúgio perfeito, onde sonhos se entrelaçavam e promessas de um amor eterno se renovavam a cada amanhecer.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Sintonia</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Sintonia" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h16.png" alt="Cinema" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Cinema</p>
+                    <p class="text-sm">Na penumbra aconchegante do cinema, eles se sentaram lado a lado, as mãos se tocando levemente no apoio da cadeira. A tela iluminava seus rostos, refletindo cenas de amor e aventura que pareciam ganhar vida própria. A cada suspense e riso compartilhado, seus corações batiam em uníssono, criando uma harmonia silenciosa. Quando ele passou o braço ao redor dela, ela se aconchegou em seu peito, sentindo a segurança e o conforto de estar nos braços de quem amava. O som suave da trilha sonora misturava-se ao ritmo tranquilo de suas respirações, e naquele pequeno universo de escuridão e luz, eles descobriram que o verdadeiro espetáculo era o amor que florescia entre eles.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Sinceridade</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Sinceridade" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h18.png" alt="Perfeita" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Perfeita</p>
+                    <p class="text-sm">Sob o brilho suave do luar, eu não consigo desviar o olhar de você, minha querida. Seus olhos, tão profundos e cativantes, são como estrelas que guiam meu caminho nas noites mais escuras. Seu sorriso, doce e sincero, tem o poder de iluminar até os cantos mais sombrios do meu coração. Quando estou ao seu lado, sinto uma paz indescritível, como se cada momento fosse eternamente perfeito. A maneira como sua mão se encaixa na minha, tão naturalmente, me faz acreditar que fomos feitos um para o outro. Meu amor por você cresce a cada dia, alimentado pela sua beleza, bondade e pela infinita alegria que traz à minha vida.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Doçura</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Doçura" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h19.png" alt="Juntos no topo Igreja" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Juntos no topo da Igreja</p>
+                    <p class="text-sm">Juntos no topo da igreja, sob a vastidão do céu estrelado, sentíamos o mundo inteiro aos nossos pés. A brisa suave da noite acariciava nossos rostos enquanto nossas mãos permaneciam entrelaçadas, firmes e seguras. Os sinos, silenciosos naquele momento, pareciam guardar segredos de amores antigos, ecoando a eternidade de nosso próprio sentimento. A cidade abaixo de nós brilhava com luzes distantes, mas nada se comparava ao brilho em seus olhos quando me olhava. Naquele santuário elevado, cercados pela serenidade e beleza do momento, nossos corações batiam em perfeita harmonia, confirmando que nosso amor era tão duradouro e sublime quanto as estrelas que nos iluminavam.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Fidelidade</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Fidelidade" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h20.png" alt="Uma flor entre as demais" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Uma flor entre as demais</p>
+                    <p class="text-sm">Entre todas as flores do jardim, você é a mais rara e encantadora, uma flor entre as demais. Sua beleza se destaca de maneira única, irradiando uma luz própria que atrai todos os olhares, mas é seu perfume doce e suave que realmente me cativa. Cada pétala sua, delicada e perfeita, parece contar uma história de amor e ternura que só você possui. Quando estou ao seu lado, sinto-me como um jardineiro afortunado, privilegiado por cuidar e admirar a flor mais preciosa. Você traz cor e vida ao meu mundo, transformando os dias comuns em um desabrochar constante de felicidade e amor.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Afeição</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Afeição" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h21.png" alt="Queijo Coalho" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Passeio no Parque</p>
+                    <p class="text-sm">Durante nosso passeio no parque, cada passo ao seu lado se transforma em um poema de amor. Os raios do sol dançam entre as árvores, pintando nossos sorrisos com um brilho especial enquanto compartilhamos histórias e risos. O aroma das flores silvestres se mistura ao perfume suave do seu cabelo, criando uma atmosfera de romance que envolve nossos corações. De mãos dadas, exploramos cada trilha e bancos sombreados, criando memórias que se entrelaçam como os galhos das árvores acima de nós. Cada momento ao seu lado é um presente precioso que guarda a promessa de um amor que floresce a cada novo encontro no parque.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Romance</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Romance" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h23.png" alt="Girassol" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Girrasol</p>
+                    <p class="text-sm">Você é meu girassol, minha fonte de luz e calor em cada amanhecer. Assim como a flor que segue o sol, meu coração se volta para você, buscando sua presença que ilumina meus dias. Seu sorriso é como o brilho radiante das pétalas douradas que viram na direção da luz, trazendo calor e alegria mesmo nos momentos mais sombrios. Em seu abraço, encontro a paz que só um girassol conhece ao se curvar suavemente ao vento gentil. E, assim como a flor que é a promessa de um novo dia, você é a promessa de um amor que cresce e floresce constantemente, enchendo minha vida com cores vivas e esperança renovada.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Suavidade</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Suavidade" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h22.png" alt="Planetario" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Planetário</p>
+                    <p class="text-sm">No planetário, perdidos na imensidão do universo, nossos olhares se encontram em meio às constelações que pontilham o teto escuro. As estrelas cintilam como testemunhas silenciosas do nosso amor, enquanto nos abraçamos, compartilhando o fascínio pela vastidão cósmica e pela magia que nos une. Cada projeção celeste é um lembrete do quão pequenos somos diante da vastidão do cosmos, mas também do quão grande é o amor que sentimos um pelo outro. No calor do seu abraço, sinto-me protegido como se estivéssemos flutuando juntos no espaço infinito, navegando pelos mistérios do universo e descobrindo novas constelações de amor a cada batida do nosso coração em sintonia.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Proteção</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Proteção" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h24.png" alt="Constelação" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Constelação</p>
+                    <p class="text-sm">Para mim, você é como uma constelação no céu noturno: única, brilhante e cheia de significado. Cada traço do seu sorriso forma uma estrela que guia meu caminho, iluminando os momentos mais escuros da minha vida. Nossa história se entrelaça como linhas invisíveis que conectam essas estrelas, criando um mapa celestial que só nós dois entendemos completamente. Quando estou ao seu lado, sinto-me parte de algo maior, algo etéreo e intemporal. E assim como as estrelas que formam uma constelação, nosso amor é uma beleza que transcende o tempo e o espaço, brilhando intensamente no universo que é a nossa vida juntos.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Gratidão</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Gratidão" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h25.png" alt="Paixão" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Paixão</p>
+                    <p class="text-sm">Nossa paixão é como um fogo ardente que consome nossos corações, mas ao invés de nos queimar, ela nos aquece e nos une ainda mais profundamente. Cada momento juntos é uma chama que dança ao ritmo dos nossos sorrisos e carícias, iluminando nosso caminho com uma luz intensa e inesquecível. Em seus olhos encontro a centelha que acende a minha própria paixão, criando um vínculo que transcende o tempo e o espaço. Nossa paixão é o tecido que une nossas almas, fazendo-nos sentir vivos e completos a cada batida do coração.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Delicadeza</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Delicadeza" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h26.png" alt="Beijo" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Beijo</p>
+                    <p class="text-sm">O beijo entre nós é um momento de pura magia, onde o mundo ao nosso redor desaparece e só existimos nós dois, unidos pela doçura e intensidade desse gesto. Seus lábios contra os meus são como um elo invisível que une nossas almas, transmitindo emoções que palavras nunca poderiam expressar completamente. Cada toque dos nossos lábios é um suspiro de amor e desejo, um instante eternizado onde o tempo se suspende para nos permitir saborear a plenitude do nosso amor. É nesse momento que percebo como o amor pode ser tão poderoso, capaz de transformar simples gestos em memórias eternas de uma conexão profunda e verdadeira.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Afeição</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Afeição" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h27.png" alt="Baguete" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Baguete</p>
+                    <p class="text-sm">Num simples lanche juntos, descobrimos que a felicidade está nos pequenos momentos compartilhados. Cada mordida, cada risada, é um reflexo da nossa cumplicidade e da alegria de estarmos juntos. Seja dividindo um sanduíche ou compartilhando um doce, cada gesto é uma expressão de cuidado e carinho que fortalece nosso vínculo. No calor da conversa descontraída e dos olhares que se cruzam com ternura, encontramos um refúgio especial onde as preocupações do mundo se dissipam. Assim, cada refeição se transforma em um banquete de amor, onde o sabor da comida se mistura ao sabor do nosso amor, alimentando não apenas nossos corpos, mas também nossos corações.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Estima</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Estima" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h28.png" alt="Encanto" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">O encanto do seu carinho</p>
+                    <p class="text-sm">O encanto do seu carinho envolve minha alma como um abraço caloroso em uma noite fria. Cada toque suave das suas mãos é como uma melodia suave que acalma meus medos e acende minha esperança. É nos seus gestos gentis e na ternura do seu olhar que encontro um oásis de paz e conforto. Seu carinho é a luz que ilumina meus dias mais sombrios, transformando cada momento ao seu lado em um presente precioso que guardo no fundo do meu coração.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Mimo</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Mimo" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h30.png" alt="Doce pequena Rosa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Doce pequena Rosa</p>
+                    <p class="text-sm">Você é minha doce pequena rosa, delicada e única em meio a um jardim de mil flores. Cada pétala sua é um reflexo da sua beleza interior, radiante e cativante. Seu perfume suave envolve meus sentidos como um abraço acolhedor, trazendo conforto e alegria à minha vida. Assim como uma rosa que desabrocha com a luz do sol, você trouxe cor e significado aos meus dias, enchendo-os de amor e esperança. Em seu sorriso, encontro a pureza de um amor que floresce constantemente, transformando meu mundo em um lugar mais belo e sereno.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Luz</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Luz" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h31.png" alt="Diversão em dose dupla" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Diversão em dose dupla</p>
+                    <p class="text-sm">Nosso amor é uma festa sem fim, onde a diversão se torna uma parte essencial de nossa jornada juntos. Cada risada compartilhada é como um presente precioso que enriquece nossa conexão. Em nossas brincadeiras e momentos de descontração, descobrimos a verdadeira essência de estar ao lado de alguém que nos completa. A cada aventura que enfrentamos juntos, fortalecemos nosso vínculo e criamos memórias que serão eternamente gravadas em nossos corações. Em meio às nossas travessuras e trocas de olhares cúmplices, encontramos um equilíbrio perfeito entre seriedade e leveza, transformando a vida em uma celebração contínua de amor e alegria.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Parceria</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Parceria" data-price="8.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h32.png" alt="Descanso em seus braços" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Descanso em seus braços</p>
+                    <p class="text-sm">Descansar em seus braços é como encontrar um refúgio seguro em meio ao tumulto do mundo. Ali, no calor do seu abraço, todos os meus medos se dissipam e meu coração encontra paz. Seus braços são o lugar onde encontro conforto e segurança, onde posso me permitir ser vulnerável e verdadeiro. Cada batida do seu coração é uma melodia suave que acalma minha alma, enquanto sua presença suave e reconfortante me lembra que estou exatamente onde pertenço. Em cada momento que compartilhamos assim, sei que nosso amor é uma fortaleza que nos sustenta, tornando cada instante uma bênção que guardarei para sempre em minha memória.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Lar</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Lar" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h33.png" alt="Nossas loucuras" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Nossas loucuras</p>
+                    <p class="text-sm">Nossas loucuras são os momentos mais preciosos e autênticos de nossa jornada juntos. São nesses instantes que nos permitimos ser completamente nós mesmos, sem reservas ou máscaras, apenas o puro e verdadeiro amor que nos une. Em nossas aventuras e risadas compartilhadas, descobrimos um cúmplice no outro, alguém com quem podemos ser completamente loucos e ainda assim sermos amados incondicionalmente. Cada momento de espontaneidade e ousadia fortalece nossa conexão, lembrando-nos da beleza de viver intensamente ao lado da pessoa que escolhemos para ser nosso companheiro de vida.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Diversão</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Diversão" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+
+            <!--fim do Produto-->
+
+            <div class="flex gap-2">
+                <img src="img/h29.png" alt="Familia" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Família</p>
+                    <p class="text-sm">Nossa família é o coração pulsante de nosso amor, um laço sagrado que une nossos destinos de forma indelével. Em cada riso de nossos filhos, encontramos a essência pura e alegre de nosso amor refletida de volta para nós. Cada desafio que enfrentamos juntos nos fortalece, enquanto cada conquista nos enche de orgulho compartilhado. Nossa casa é um santuário onde o amor floresce em cada canto, onde os abraços são sempre acolhedores e as conversas são permeadas pela compreensão mútua. Em nossa família, encontramos não apenas amor, mas também o apoio e a segurança que só podem ser encontrados no calor de um lar verdadeiramente amoroso.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Presença</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Presença" data-price="8.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h34.png" alt="Dia dos Namorados" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Dia dos Namorados</p>
+                    <p class="text-sm">No Dia dos Namorados, celebramos não apenas o amor que compartilhamos, mas também a jornada que nos trouxe até aqui. Cada gesto de carinho, cada palavra de afeto, é um lembrete do quanto somos abençoados por termos encontrado um ao outro neste vasto mundo. Em meio aos presentes trocados e aos momentos especiais que planejamos com tanto cuidado, o verdadeiro presente está em nossa conexão profunda e genuína. É uma ocasião para lembrarmos o quanto somos gratos por termos encontrado nosso parceiro de vida, nosso amigo mais íntimo, e por podermos compartilhar não apenas este dia, mas toda a nossa vida juntos.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Romance</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Romance" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/h35.png" alt="Um rolê aleatório" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Um rolê aleatório</p>
+                    <p class="text-sm">Um rolê aleatório ao seu lado é sempre uma aventura surpreendente e cheia de amor. Não importa para onde vamos ou o que fazemos, cada momento é uma descoberta que fortalece nossa conexão. Às vezes, é uma caminhada improvisada pelo parque, outras vezes é explorar novos cantos da cidade que nunca imaginamos visitar. Em cada esquina e em cada riso compartilhado, encontramos motivos para celebrar nossa união e a sorte de termos encontrado um ao outro nesta jornada chamada vida. É nessas pequenas escapadas que reafirmamos nosso compromisso mútuo de crescer juntos, enfrentando desafios e celebrando conquistas, fazendo de cada dia uma oportunidade para amar e ser amado de maneira única e especial.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">Vida</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Vida" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl text-center">
+                Coleções
+            </h2>
+        </div>
+        <br>
+        <!--Grid Bebidas-->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="img/Rosa.png" alt="Rosa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Rosa</p>
+
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 5.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Rosa" data-price="5.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="img/cartagil.png" alt="carta" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Carta Glbert</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 5.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Cartinha" data-price="5.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./img/Chaves.png" alt="Chave" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Chave do Coração</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 7.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Chave do Coração" data-price="7.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./img/Coração.png" alt="Coração" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Coração</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 7.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Coração" data-price="7.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./img/LufaLufa.png" alt="Lufa Lufa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Lufa Lufa</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 8.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Lufa Lufa" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./img/Diver.png" alt="Divertida Mente" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Divertida Mente</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 8.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Divertida Mente" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./img/Gloss.png" alt="Gloss" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Gloss</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 8.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Gloss" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./img/Esmalte.png" alt="Esmalte" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Esmalte</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 8.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Esmalte" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./img/Anjo.png" alt="Anjo" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Anjinho</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 8.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Anjinho" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./img/Instagram1.png" alt="Anjo" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Instagram</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 8.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Instagram" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./img/a teoria.png" alt="The Big Bang Theory" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">The Big Bang Theory</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 8.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="The Big Bang Theory" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./img/cinema.png" alt="Cinema" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Cinema</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 8.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Cinema" data-price="8.00">
+                            <i class="fa fa-heart text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+        </div>
+        <!--Fim da Grid Bebidas-->
+    </div>
+    <!--Fim da Menu-->
+
+    <!--Modal Cart-->
+    <div class="bg-black/70 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Sua Cesta🧺</h2>
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+            <p class="font-bold">Valor a ser Pago: <span id="cart-total">0.00</span></p>
+            <p class=" font-bold text-red-500">Ops! Pague com muitos beijos e abraços🥰</p>
+            <p class="font-bold mt-4">Nosso Destino:</p>
+            <input type="text" placeholder="Digite seu endereço completo..." id="address" class="w-full border-2 p-1 rounded my-1">
+            <p class="text-red-500 hidden" id="address-warn">Não esqueça do nosso Destino!⚠️</p>
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+    <!--fim do Modal Cart-->
+
+    <!--Button Footer-->
+    <footer class="w-full bg-rose-950 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Para Cássia Ferreira Lourenço
+            <i class="fa fa-heart text-lg text-white"></i>
+        </button>
+    </footer>
+    <!--Fim Button Fotter-->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
